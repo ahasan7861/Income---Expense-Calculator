@@ -15,13 +15,33 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
     const clothesValue = document.getElementById("clothes").value;
     clothes = parseFloat(clothesValue);
 
-    // if(food != Number && rent != Number && clothes != Number){
-    //     alert("please enter the number");
+
+
+    // if(isNaN(income) || isNaN(food) || isNaN(rent) || isNaN(clothes)){
+    //    const warning = alert("please enter the number type value");
+    //    return warning;
+       
     // }
+
+    // else if(income <= 0 || food <= 0 || rent <= 0 || clothes <= 0){
+    //     const warning = alert("please input positive number");
+    //     return warning;
+    // }
+
+
+    
+
+    
+
+    
 
 
    
     const totalExpence = food + rent + clothes;
+    // if(income < totalExpence){
+    //     const warning = alert("your expense is grater than your income");
+    //     return warning;
+    // }
    document.getElementById("total-expense").innerText = totalExpence;
 
 
